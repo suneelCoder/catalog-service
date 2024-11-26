@@ -3,7 +3,7 @@ import { Request } from "express";
 import jwksClient from "jwks-rsa";
 import { AuthCookie } from "../types";
 import config from "config";
-
+console.log(config.get("auth.jwksUri"), 'config.get("auth.jwksUri")')
 export default expressjwt({
     secret: jwksClient.expressJwtSecret({
         jwksUri: config.get("auth.jwksUri"),

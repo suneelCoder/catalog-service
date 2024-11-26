@@ -52,6 +52,7 @@
     },
     "dependencies": {
         "@aws-sdk/client-s3": "^3.525.0",
+        "cloudinary": "^2.5.1",
         "config": "^3.3.11",
         "cookie-parser": "^1.4.6",
         "cors": "^2.8.5",

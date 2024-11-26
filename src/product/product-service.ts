@@ -4,6 +4,7 @@ import { Filter, PaginateQuery, Product } from "./product-types";
 
 export class ProductService {
     async createProduct(product: Product) {
+        console.log(product, 'this is the product')
         return (await productModel.create(product)) as Product;
     }
 

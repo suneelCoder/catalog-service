@@ -12,6 +12,7 @@ const app = express();
 const ALLOWED_DOMAINS = [
     config.get("frontend.clientUI"),
     config.get("frontend.adminUI"),
+    "http://localhost:8000"
 ];
 
 app.use(
